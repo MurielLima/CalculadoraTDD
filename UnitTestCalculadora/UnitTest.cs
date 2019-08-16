@@ -12,25 +12,25 @@ namespace UnitTestCalculadora
         public void TesteSalarioDesenvolvedor1()//Não deve passar depois da implementação final
         {
             Desenvolvedor dev = new Desenvolvedor("Muriel José Lima", "muriel@email.com", 1);
-            Assert.AreEqual(1,dev.Salario);
+            Assert.AreNotEqual(1,dev.Salario);
         }
         [TestMethod]
         public void TesteSalarioDBA1()
         {
             Dba dba = new Dba("Muriel José Lima", "muriel@email.com", 1);
-            Assert.AreEqual(1,dba.Salario);
+            Assert.AreNotEqual(1,dba.Salario);
         }
         [TestMethod]
         public void TesteSalarioGerente1()
         {
             Gerente ger = new Gerente("Muriel José Lima", "muriel@email.com", 1); ;
-            Assert.AreEqual(1,ger.Salario);
+            Assert.AreNotEqual(1,ger.Salario);
         }
         [TestMethod]
         public void TesteSalarioTestador1()
         {
             Testador test = new Testador("Muriel José Lima", "muriel@email.com", 1); ;
-            Assert.AreEqual(1,test.Salario);
+            Assert.AreNotEqual(1,test.Salario);
         }
 
         [TestMethod]
